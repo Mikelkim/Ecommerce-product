@@ -36,7 +36,7 @@ cartBtn.addEventListener('click',()=>{
 
         const cartImg=document.createElement('img');
         cartImg.id='cartImg';
-        cartImg.src='images/ image-product-1.jpg'; 
+        cartImg.src='images/image-product-1.jpg'; 
         cartImg.style.width='60px'; 
         cartImg.style.height='60px';
 
