@@ -44,7 +44,7 @@ cartBtn.addEventListener('click',()=>{
         cartStatement.id='cartStatement'
 
         const deleteIcon=document.createElement('img');
-        deleteIcon.src='images/icon-delete.svg'
+        deleteIcon.src='\images/icon-delete.svg'
         deleteIcon.onclick=function(){
             const ALLCartContent=document.querySelector('.cart-all-items');
             ALLCartContent.remove();
