@@ -41,7 +41,7 @@ cartBtn.addEventListener('click',()=>{
         cartImg.style.height='60px';
 
         const cartStatement=document.createTextNode('Fall Limited Edition Sneakers');
-        cartStatement.id='cartStatement'
+        cartStatement.id='cartStatement';
 
         const deleteIcon=document.createElement('img');
         deleteIcon.src="images/icon-delete.svg";
