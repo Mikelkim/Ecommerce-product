@@ -36,7 +36,7 @@ cartBtn.addEventListener('click',()=>{
 
         const cartImg=document.createElement('img');
         cartImg.id='cartImg';
-        cartImg.src='/images/image-product-1.jpg'; 
+        cartImg.src='images/image-product-1.jpg'; 
         cartImg.style.width='60px'; 
         cartImg.style.height='60px';
 
@@ -44,7 +44,7 @@ cartBtn.addEventListener('click',()=>{
         cartStatement.id='cartStatement'
 
         const deleteIcon=document.createElement('img');
-        deleteIcon.src='/images/icon-delete.svg'
+        deleteIcon.src='images/icon-delete.svg'
         deleteIcon.onclick=function(){
             const ALLCartContent=document.querySelector('.cart-all-items');
             ALLCartContent.remove();
