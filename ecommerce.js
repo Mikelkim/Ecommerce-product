@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded',()=>{
-let decrease=document.querySelector('.minus')
-let NoItems=document.querySelector('.no-items')
-let increase=document.querySelector('.plus')
-let cartIcon=document.querySelector('.cart-icon')
-let CartOut=document.querySelector('.output')
-let display=document.querySelector('.display')
+let decrease=document.querySelector('.minus');
+let NoItems=document.querySelector('.no-items');
+let increase=document.querySelector('.plus');
+let cartIcon=document.querySelector('.cart-icon');
+let CartOut=document.querySelector('.output');
+let display=document.querySelector('.display');
 cartIcon.onclick=function(){
     CartOut.classList.toggle('active');
     display.classList.toggle('active');
@@ -14,13 +14,13 @@ let  orgPriceToCalculate=0;
 let count=0
 increase.addEventListener('click',()=>{
       count+=1
-      NoItems.innerHTML=count
+      NoItems.innerHTML=count;
       AddedTocartNo.textContent=count;
 })
 decrease.addEventListener('click',()=>{
     do{
     count-=1
-    NoItems.innerHTML=count
+    NoItems.innerHTML=count;
     AddedTocartNo.textContent=count;
 }
     while
@@ -28,15 +28,15 @@ decrease.addEventListener('click',()=>{
 })
 
 
-let cartBtn=document.querySelector('.cart-button')
+let cartBtn=document.querySelector('.cart-button');
 cartBtn.addEventListener('click',()=>{
     if(count>0){
-        const statement=document.querySelector('.statement')
+        const statement=document.querySelector('.statement');
         statement.remove();
 
         const cartImg=document.createElement('img');
         cartImg.id='cartImg';
-        cartImg.src='images/image-product-1.jpg'; 
+        cartImg.src="images/image-product-1.jpg"; 
         cartImg.style.width='60px'; 
         cartImg.style.height='60px';
 
@@ -44,7 +44,7 @@ cartBtn.addEventListener('click',()=>{
         cartStatement.id='cartStatement'
 
         const deleteIcon=document.createElement('img');
-        deleteIcon.src='images / icon-delete.svg'
+        deleteIcon.src="images/icon-delete.svg";
         deleteIcon.onclick=function(){
             const ALLCartContent=document.querySelector('.cart-all-items');
             ALLCartContent.remove();
